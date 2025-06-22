@@ -1,7 +1,7 @@
 baseurl = "/"
 languageCode = "en-us"
 languageLang = "en"
-title = "BiblioPortal"
+title = "Grest Don Bosco Fontanafredda"
 disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
 
 [params]
