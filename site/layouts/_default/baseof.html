@@ -132,16 +132,27 @@ a.btn:hover {
                 <li id="menu-item-58" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-58"><a href="../classifica">Classifica</a></li>
                 <li id="menu-item-58" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-58"><a href="../contatti">Contatti</a></li>
                 <li id="menu-item-58" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-58">
-	<button id="login-button" style="
-    padding: 10px 20px;
-    font-size: 1rem;
-    background-color: #ff6600;
-    color: #fff;
-    border-radius: 8px;
-    border: none;
-    cursor: pointer;">
-    Accedi / Registrati
-</button>
+<div style="display: flex; align-items: center; gap: 10px;">
+    <button id="login-button" style="
+        padding: 10px 20px;
+        font-size: 1rem;
+        background-color: #ff6600;
+        color: #fff;
+        border-radius: 8px;
+        border: none;
+        cursor: pointer;">
+        Accedi / Registrati
+    </button>
+    <span id="user-emoji" style="font-size: 1.5rem; cursor: pointer;" title="Vai alla tua area personale">
+        👤
+    </span>
+</div>
+<script>
+    // Quando si clicca sulla faccina, vai a /usr/
+    document.getElementById('user-emoji').addEventListener('click', function() {
+        window.location.href = '/usr/';
+    });
+</script>
 		</li>
 </ul></div>        </nav><!-- #site-navigation -->
     </div><!-- .wrapper -->
