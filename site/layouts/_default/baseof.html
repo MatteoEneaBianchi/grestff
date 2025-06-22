@@ -147,8 +147,17 @@ a.btn:hover {
         👤
     </span>
 </div>
+
 <script>
-    // Quando si clicca sulla faccina, vai a /usr/
+    // Simula lo stato di login
+    const isLoggedIn = false; // <-- Cambia a true quando l'utente è loggato
+
+    // Nasconde il pulsante di login se l'utente è loggato
+    if (isLoggedIn) {
+        document.getElementById('login-button').style.display = 'none';
+    }
+
+    // Click sulla faccina -> vai alla area personale
     document.getElementById('user-emoji').addEventListener('click', function() {
         window.location.href = '/usr/';
     });
