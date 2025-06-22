@@ -1,4 +1,6 @@
-<!DOCTYPE html> <html lang="it-IT"><head>
+<!DOCTYPE html> 
+<html lang="it-IT">
+<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="https://gmpg.org/xfn/11">
@@ -187,5 +189,22 @@ a.btn:hover {
             <span class="copy-right">Copyright &copy; All rights reserved. Theme by <a target="_blank" rel="designer" href="http://gabrieljones.it/">Gabriel Jones</a></span>
         </div><!-- .wrapper --> 
     </div> <!-- .site-info -->
+<script>
+    if (window.netlifyIdentity) {
+        // Inizializza Netlify Identity
+        netlifyIdentity.on('init', user => {
+            if (user) {
+                console.log('Utente loggato:', user);
+            } else {
+                console.log('Nessun utente loggato');
+            }
+        });
+        // Apre il popup al click
+        document.getElementById('login-button').addEventListener('click', function() {
+            netlifyIdentity.open();
+        });
+    }
+</script>
+
     </body>  
 </html>
